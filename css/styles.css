@@ -230,7 +230,8 @@ main {
 
 .process {
   height: 100%;
-  border-bottom: 2px solid black; }
+  border-bottom: 2px solid black;
+  padding: 2rem 0; }
 
 footer {
   display: flex;
