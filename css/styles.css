@@ -102,51 +102,51 @@ li {
 .qualifications__text {
   font-size: 1.2rem; }
 
-.projects__box {
-  display: flex;
-  display: -webkit-flexbox;
-  flex-direction: column;
-  text-align: center;
-  margin: 1.5rem auto; }
-  .projects__box-info {
+.projects {
+  height: 100%; }
+  .projects__box {
     display: flex;
     display: -webkit-flexbox;
     flex-direction: column;
-    align-items: center;
-    font-size: 1.2rem; }
-  .projects__box-info h5 {
-    font-size: 1.5rem;
-    text-decoration: underline; }
-
-.projects-img {
-  -webkit-filter: brightness(100%);
-  width: 100%;
-  border: 2px solid #d8d8d8;
-  padding: 2rem;
-  border-radius: 3px;
-  width: 100%; }
-
-.projects__img-box {
-  position: relative;
-  margin: 0 auto;
-  width: 65%; }
-
-.projects__img-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  opacity: 0;
-  transition: all .5s;
-  color: #fff;
-  backface-visibility: hidden; }
+    text-align: center;
+    margin: 1.5rem auto; }
+    .projects__box-info {
+      display: flex;
+      display: -webkit-flexbox;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.2rem; }
+    .projects__box-info h5 {
+      font-size: 1.5rem;
+      text-decoration: underline; }
+  .projects-img {
+    -webkit-filter: brightness(100%);
+    width: 100%;
+    border: 2px solid #d8d8d8;
+    padding: 2rem;
+    border-radius: 3px;
+    width: 100%; }
+  .projects__img-box {
+    position: relative;
+    margin: 0 auto;
+    width: 65%; }
+  .projects__img-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    opacity: 0;
+    transition: all .5s;
+    color: #fff;
+    backface-visibility: hidden; }
 
 .about,
 .skills,
 .qualifications,
-.projects {
+.projects,
+.current-projects {
   padding: 2rem 0; }
 
 /*caption on picture*/
@@ -229,8 +229,12 @@ main {
   .qualifications__date {
     font-size: 1rem; }
 
-.process {
+.current-projects {
   height: 100%;
+  background-color: var(--color-grey-dark);
+  color: #fff; }
+
+.process {
   border-bottom: 2px solid black;
   padding: 2rem 0; }
 
@@ -312,7 +316,8 @@ footer {
   .projects__box-info h5 {
     font-size: 2rem; }
   .li-paragraph p {
-    font-size: 1.75rem; }
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem; }
   .li-paragraph {
     list-style-type: disc; }
   .container {

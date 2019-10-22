@@ -68,6 +68,8 @@
 
 .projects {
 
+    height: 100%;
+
     &__box {
         display: flex;
         display: -webkit-flexbox;
@@ -124,7 +126,8 @@
 .about,
 .skills,
 .qualifications,
-.projects {
+.projects,
+.current-projects {
     padding: 2rem 0;
 }
 
