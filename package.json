@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/styles.css -w",
-    "compile:sass": "node-sass sass/main.scss css/styles.css -w",
+    "watch:sass": "sass --watch sass/main.scss:css/styles.css",
+    "compile:sass": "sass sass/main.scss:css/styles.css",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.12.0",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.77.2",
+    "live-server": "^1.2.1"
   },
   "dependencies": {
     "progressbar.js": "^1.0.1"
