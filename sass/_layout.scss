@@ -1,92 +1,49 @@
 body {
-    padding: 2.5rem 2.5rem 0 2.5rem;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 
-.hero {
-    background-image: linear-gradient( 
-                                    var(--color-primary), 
-                                    var(--color-secondary));
-    height: 50rem; // test
-    padding: 0 4rem;
-    border-radius: 0px; // larger mq 5px
-
-    position: fixed;
-    height: 50rem;
-    left: 0; // larger mq 3.5%
-    top: 0; // larger mq 7%
-    width: 100vw; // larger mq calc(100vw - 9rem);
-
-    display: flex;
-    align-items: center;
-}
-
-main {
-    box-shadow: var(--shadow-dark);
-    width: 99%;
-    margin: -10rem auto 0 auto;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-    z-index: 2;
-    margin-top: 35rem;
-}
-
-.about {
-    background-color: var(--color-grey-dark);
-    color: #fff;
-}
-
-.skills,
-.projects,
-.process {
-    background-color: #E2E2E2;
-}
-
-.skills__box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.skills__box-html,
-.skills__box-css,
-.skills__box-js,
-.skills__box-node {
-    width: 100%;
+.hero,
+.gallery {
+  margin-bottom: 10rem;
 }
 
 #html-bar,
 #css-bar,
 #js-bar,
 #node-bar {
-    width: 100%;
+  width: 100%;
 }
 
 .qualifications {
-    background-color: var(--color-grey-dark);
-    color: #fff;
+  background-color: var(--color-grey-dark);
+  color: #fff;
 
-    &__date {
-        font-size: 1rem;
-    }
+  &__date {
+    font-size: 1rem;
+  }
 }
 
-.current-projects{
-    height: 100%;
-    background-color: var(--color-grey-dark);
-    color: #fff;
+.current-projects {
+  height: 100%;
+  background-color: var(--color-grey-dark);
+  color: #fff;
 }
 
 .process {
-    border-bottom: 2px solid black;
-    padding: 2rem 0;
+  border-bottom: 2px solid black;
+  padding: 2rem 0;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    padding: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 2.5rem 0;
 }

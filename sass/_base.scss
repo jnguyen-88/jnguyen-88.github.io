@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Nunito', sans-serif;
 }
 
 *,
@@ -18,14 +17,30 @@ html {
 }
 
 :root {
-  --color-primary: #ff5e62;
+  --primary-blue-1: #b8c3c2;
 
-  --color-secondary: #ff9966;
+  --primary-yellow-1: #e6dec9;
 
   --color-grey-dark: #333;
 
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.35);
   --shadow-light: 0 2rem 4rem rgba(0, 0, 0, 0.03);
+
+  --font-body: 'Poppins', sans-serif;
+  --font-heading: 'Josefin Sans', sans-serif;
+  --font-color: #1a1c1c;
+
+  --background-start-rgb: 184, 195, 194; /* RGB values for #b8c3c2 */
+  --background-end-rgb: 216, 223, 222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
 }
 
 .heading-primary {
@@ -33,14 +48,12 @@ html {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
 }
 
 .heading-secondary {
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
 }
 
 .heading-tertiary {
@@ -49,8 +62,7 @@ html {
 }
 
 li {
-  color: var(--color-secondary);
-  font-size: 2rem;
+  font-size: 2.35rem;
 
   & p {
     font-size: 1.5rem;
@@ -67,6 +79,11 @@ li {
 .li-paragraph p {
   color: #212529;
   font-size: 1.25rem;
+}
+
+.c-link {
+  color: #fff;
+  font-weight: 500;
 }
 
 #html-bar,

@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -18,8 +17,14 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Nunito:300,400|Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -30,35 +35,26 @@
   <body>
     <header class="hero">
       <div class="container">
-        <div class="row">
-          <div class="hero__wrapper">
-            <div class="hero__content">
-              <h1 class="heading-primary">Hey,</h1>
-              <p class="hero__text">
-                My name is Justin Nguyen. <br />
-                I'm a Front End Developer based out of Sacramento, California.
-              </p>
-            </div>
-            <ul class="hero__social mt-4">
-              <li>
-                <a
-                  href="https://www.github.com/jnguyen-88"
-                  target="_blank"
-                  class="hero__link"
-                >
-                  <i class="fab fa-github-square hero__link-icon"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/jnguyen-1988/"
-                  target="_blank"
-                  class="hero__link"
-                >
-                  <i class="fab fa-linkedin hero__link-icon"></i>
-                </a>
-              </li>
-            </ul>
+        <div class="row justify-content-center">
+          <div
+            class="hero__content text-center d-flex flex-column align-items-center"
+          >
+            <h1 class="display-1 text-uppercase lh-sm">
+              Justin Nguyen <br />
+              <span style="font-weight: 500">
+                Full-Stack Developer & Design Specialist</span
+              ><br />
+              based in California
+            </h1>
+            <aside class="display-5 mt-4 mt-lg-5">
+              combining technical expertise with design vision to deliver
+              standout digital creations. view his work below, or connect via
+              <a class="c-link" href="mailto:319jnguyen@gmail.com">email</a>
+              or
+              <a class="c-link" href="www.linkedin.com/in/jnguyen-1988"
+                >linkedin</a
+              >.
+            </aside>
           </div>
         </div>
       </div>
@@ -66,220 +62,77 @@
     <!-- End of Header -->
 
     <main>
-      <div class="left">
-        <section class="about">
-          <div class="container">
-            <h2 class="heading-secondary mb-4">About Me</h2>
-            <p class="about__text">
-              A Web Developer with over 8 years of development experience and
-              more than 5 years in startups and project management. I thrive on
-              turning ideas into innovative solutions. In 2023, I was honored
-              with the Platinum Hermes Creative Award for exceptional design
-              work. I've got a knack for leading teams, fostering creativity,
-              and delivering top-notch projects. <br /><br />
-              <b
-                >My toolkit? React, Bootstrap, JavaScript, MongoDB, and
-                Express.</b
-              >
-            </p>
-          </div>
-        </section>
-
-        <section class="skills">
-          <div class="container">
-            <h2 class="heading-secondary mb-4">Skills</h2>
-            <div class="skills__box">
-              <div class="skills__box-html">
-                <h3>HTML</h3>
-                <div id="html-bar"></div>
-              </div>
-              <div class="skills__box-css">
-                <h3>CSS</h3>
-                <div id="css-bar"></div>
-              </div>
-              <div class="skills__box-js">
-                <h3>Javascript</h3>
-                <div id="js-bar"></div>
-              </div>
-              <div class="skills__box-node">
-                <h3>Node.js</h3>
-                <div id="node-bar"></div>
-              </div>
+      <div class="gallery container">
+        <div class="row">
+          <div class="col-lg-6 project px-4 mb-4 mb-lg-5">
+            <div class="project-img-container">
+              <a href="https://lumos-uzxt.onrender.com/">
+                <img src="./img/lumos-1.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="project-text mb-lg-5">
+              <h2 class="fs-1 mt-5">Lumos</h2>
+              <p class="fs-4">
+                Lumos is a full-stack web application with comprehensive
+                functionality. It features two backend versions: one using
+                <a href="https://github.com/jnguyen-88/lumos/tree/lumos-mongo"
+                  >Node.js</a
+                >
+                for a robust framework and another
+                <a href="https://github.com/jnguyen-88/lumos/tree/main"
+                  >with plain JavaScript</a
+                >, demonstrating versatility in backend development.
+                <em class="mt-2" style="display: block"
+                  >email: test000@gmail.com <br />
+                  password: test</em
+                >
+              </p>
+              <p class="fs-5 text-uppercase" style="font-weight: 600">
+                <span class="bg-secondary badge">Node.js</span>
+                <span class="bg-secondary badge">Express.js</span>
+                <span class="bg-secondary badge">MongoDB</span>
+              </p>
+              <ul class="hero__social mt-4 px-0 social-flex">
+                <li>
+                  <a
+                    href="https://github.com/jnguyen-88/lumos/tree/lumos-mongo"
+                    target="_blank"
+                    class="hero__link"
+                  >
+                    <i class="fab fa-github-square social-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://lumos-uzxt.onrender.com/"
+                    target="_blank"
+                    class="hero__link"
+                  >
+                    <i class="fas fa-external-link-square-alt social-icon"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
 
-        <section class="current-projects">
-          <div class="container">
-            <h2 class="heading-secondary mb-4">Current Projects</h2>
-            <figure class="projects__box">
-              <div class="projects__box-info">
-                <h5>Reel Movies</h5>
-                <p class="project-description mt-4 mb-4">
-                  Version 2 of my Reel Movies app. Fetching movies from The
-                  Movie DB. It will be a full stack app using the MERN Stack
-                </p>
-                <span class="tech-used">React/Redux</span>
-              </div>
-              <figure class="projects__img-box">
-                <a
-                  href="https://jnguyen-88.github.io/reel-movies-v2/"
-                  target="_blank"
-                >
-                  <img
-                    src="img/reelmoviesv2.png"
-                    class="projects-img"
-                    alt="reel movies site"
-                  />
-                  <figcaption class="projects__img-caption">
-                    Reel Movies
-                  </figcaption>
-                </a>
-              </figure>
-              <ul class="hero__social mt-4 social-flex">
-                <li>
-                  <a
-                    href="https://github.com/jnguyen-88/reel-movies-v2"
-                    target="_blank"
-                    class="hero__link"
-                  >
-                    <i class="fab fa-github-square social-icon"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://jnguyen-88.github.io/reel-movies-v2/"
-                    target="_blank"
-                    class="hero__link"
-                  >
-                    <i class="fas fa-external-link-square-alt social-icon"></i>
-                  </a>
-                </li>
-              </ul>
-            </figure>
-            <figure class="projects__box">
-              <div class="projects__box-info">
-                <h5>WatchTube</h5>
-                <p class="project-description mt-4 mb-4">
-                  WatchTube was made using React and is a clone of Youtube.
-                  Incorporating Google's API you can watch all of the same
-                  videos that are on Youtube on WatchTube.
-                </p>
-                <span class="tech-used">React</span>
-              </div>
-              <figure class="projects__img-box">
-                <a
-                  href="https://jnguyen-88.github.io/video-search/"
-                  target="_blank"
-                >
-                  <img
-                    src="img/watch.png"
-                    class="projects-img"
-                    alt="watchtube site"
-                  />
-                  <figcaption class="projects__img-caption">
-                    WatchTube
-                  </figcaption>
-                </a>
-              </figure>
-              <ul class="hero__social mt-4 social-flex">
-                <li>
-                  <a
-                    href="https://github.com/jnguyen-88/video-search"
-                    target="_blank"
-                    class="hero__link"
-                  >
-                    <i class="fab fa-github-square social-icon"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://jnguyen-88.github.io/video-search/"
-                    target="_blank"
-                    class="hero__link"
-                  >
-                    <i class="fas fa-external-link-square-alt social-icon"></i>
-                  </a>
-                </li>
-              </ul>
-            </figure>
-          </div>
-        </section>
-      </div>
-      <!-- End of Left -->
-
-      <div class="right">
-        <section class="projects">
-          <div class="container">
-            <h2 class="heading-secondary">Projects</h2>
-            <figure class="projects__box">
-              <div class="projects__box-info">
-                <h5>The Chancellor</h5>
-                <p class="project-description mt-4 mb-4">
-                  The landing page for the Chancellor - a luxury-apartment. A
-                  fully-responsive site built with Bootstrap and jQuery.
-                </p>
-                <span class="tech-used">Bootstrap, jQuery</span>
-              </div>
-              <figure class="projects__img-box">
-                <a
-                  href="https://jnguyen-88.github.io/chancellor/"
-                  target="_blank"
-                >
-                  <img
-                    src="img/chancellor.png"
-                    class="projects-img"
-                    alt="The chancellor"
-                  />
-                  <figcaption class="projects__img-caption">
-                    The Chancellor
-                  </figcaption>
-                </a>
-              </figure>
-              <ul class="hero__social mt-4 social-flex">
-                <li>
-                  <a
-                    href="https://github.com/jnguyen-88/chancellor"
-                    target="_blank"
-                    class="hero__link"
-                  >
-                    <i class="fab fa-github-square social-icon"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://jnguyen-88.github.io/chancellor/"
-                    target="_blank"
-                    class="hero__link"
-                  >
-                    <i class="fas fa-external-link-square-alt social-icon"></i>
-                  </a>
-                </li>
-              </ul>
-            </figure>
-            <figure class="projects__box">
-              <div class="projects__box-info">
-                <h5>Web Dashboard</h5>
-                <p class="project-description mt-4 mb-4">
-                  An interactive dashboard for a web application using advanced
-                  web techniques including SVG graphics and JavaScript
-                  programming.
-                </p>
-                <span class="tech-used">HTML, CSS, SASS, Javascript</span>
-              </div>
-              <figure class="projects__img-box">
-                <a href="https://jnguyen-88.github.io/webapp/" target="_blank">
-                  <img
-                    src="img/web-app.png"
-                    class="projects-img"
-                    alt="webapp site"
-                  />
-                  <figcaption class="projects__img-caption">
-                    Web Dashboard
-                  </figcaption>
-                </a>
-              </figure>
-              <ul class="hero__social mt-4 social-flex">
+          <div class="col-lg-6 project px-4 mb-4 mb-lg-5">
+            <div class="project-img-container">
+              <a href="https://jnguyen-88.github.io/webapp/">
+                <img src="./img/webapp.jpg" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="project-text mb-lg-5">
+              <h2 class="fs-1 mt-5">Web Dashboard</h2>
+              <p class="fs-4">
+                An interactive dashboard for a web application using advanced
+                web techniques including SVG graphics and JavaScript
+                programming.
+              </p>
+              <p class="fs-5 text-uppercase" style="font-weight: 600">
+                <span class="bg-secondary badge">Javascript</span>
+                <span class="bg-secondary badge">SASS</span>
+              </p>
+              <ul class="hero__social mt-4 px-0 social-flex">
                 <li>
                   <a
                     href="https://github.com/jnguyen-88/webapp"
@@ -299,141 +152,89 @@
                   </a>
                 </li>
               </ul>
-            </figure>
-            <figure class="projects__box">
-              <div class="projects__box-info">
-                <h5>Tacors</h5>
-                <p class="project-description mt-4 mb-4">
-                  A Full Stack app using Node.js with MongoDB - Tacors, an app
-                  for Tacos only. Like Yelp, users can discover new businesses
-                  or review/comment about existings Taco restaurants. <br />
-                  (username: justin password: password)
-                </p>
-                <span class="tech-used">Node.js, NoSQL</span>
-              </div>
-              <figure class="projects__img-box">
-                <a
-                  href="https://node-taco.herokuapp.com/tacors"
-                  target="_blank"
-                >
-                  <img
-                    src="img/tacors.png"
-                    class="projects-img"
-                    alt="tacors site"
-                  />
-                  <figcaption class="projects__img-caption">Tacors</figcaption>
-                </a>
-              </figure>
-              <ul class="hero__social mt-4 social-flex">
-                <li>
-                  <a
-                    href="https://github.com/jnguyen-88/tacors"
-                    target="_blank"
-                    class="hero__link"
-                  >
-                    <i class="fab fa-github-square social-icon"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://node-taco.herokuapp.com/tacors"
-                    target="_blank"
-                    class="hero__link"
-                  >
-                    <i class="fas fa-external-link-square-alt social-icon"></i>
-                  </a>
-                </li>
-              </ul>
-            </figure>
-            <figure class="projects__box">
-              <div class="projects__box-info">
-                <h5>Outsome</h5>
-                <p class="project-description mt-4 mb-4">
-                  Outsome is a fictitious online travel agency helping users
-                  discover California. Built with SASS and lots of love.
-                </p>
-                <span class="tech-used">SASS</span>
-              </div>
-              <figure class="projects__img-box">
-                <a href="https://jnguyen-88.github.io/outsome/" target="_blank">
-                  <img
-                    src="img/outsome.png"
-                    class="projects-img"
-                    alt="Outsome site"
-                  />
-                  <figcaption class="projects__img-caption">Outsome</figcaption>
-                </a>
-              </figure>
-              <ul class="hero__social mt-4 social-flex">
-                <li>
-                  <a
-                    href="https://github.com/jnguyen-88/outsome"
-                    target="_blank"
-                    class="hero__link"
-                  >
-                    <i class="fab fa-github-square social-icon"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://jnguyen-88.github.io/outsome/"
-                    target="_blank"
-                    class="hero__link"
-                  >
-                    <i class="fas fa-external-link-square-alt social-icon"></i>
-                  </a>
-                </li>
-              </ul>
-            </figure>
-            <figure class="projects__box">
-              <div class="projects__box-info">
-                <h5>Wheel of Success</h5>
-                <p class="project-description mt-4 mb-4">
-                  A browser version of “Wheel of Success”, a word guessing game.
-                  Javascript is used to come up with a random phrase that
-                  players will try to guess by entering different letters into
-                  the program.
-                </p>
-                <span class="tech-used">HTML, CSS, Javascript</span>
-              </div>
-              <figure class="projects__img-box">
-                <a
-                  href="https://jnguyen-88.github.io/gameShow/"
-                  target="_blank"
-                >
-                  <img
-                    src="img/game.png"
-                    class="projects-img"
-                    alt="wheel of success site"
-                  />
-                  <figcaption class="projects__img-caption">
-                    Wheel of Success
-                  </figcaption>
-                </a>
-              </figure>
-              <ul class="hero__social mt-4 social-flex">
-                <li>
-                  <a
-                    href="https://github.com/jnguyen-88/gameShow"
-                    target="_blank"
-                    class="hero__link"
-                  >
-                    <i class="fab fa-github-square social-icon"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://jnguyen-88.github.io/gameShow/"
-                    target="_blank"
-                    class="hero__link"
-                  >
-                    <i class="fas fa-external-link-square-alt social-icon"></i>
-                  </a>
-                </li>
-              </ul>
-            </figure>
+            </div>
           </div>
-        </section>
+
+          <div class="col-lg-6 project px-4 mb-4 mb-lg-0">
+            <div class="project-img-container">
+              <a href="https://jnguyen-88.github.io/video-search/">
+                <img src="./img/watchtube-1.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="project-text">
+              <h2 class="fs-1 mt-5">WatchTube</h2>
+              <p class="fs-4">
+                WatchTube was made using React and is a clone of Youtube.
+                Incorporating Google's API you can watch all of the same videos
+                that are on Youtube on WatchTube.
+              </p>
+              <p class="fs-5 text-uppercase" style="font-weight: 600">
+                <span class="bg-secondary badge">React</span>
+              </p>
+              <ul class="hero__social mt-4 px-0 social-flex">
+                <li>
+                  <a
+                    href="https://github.com/jnguyen-88/video-search"
+                    target="_blank"
+                    class="hero__link"
+                  >
+                    <i class="fab fa-github-square social-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://jnguyen-88.github.io/video-search/"
+                    target="_blank"
+                    class="hero__link"
+                  >
+                    <i class="fas fa-external-link-square-alt social-icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 project px-4 mb-4 mb-lg-0">
+            <div class="project-img-container">
+              <a href="https://jnguyen-88.github.io/reel-movies-v2/">
+                <img src="./img/reelmoviesv2.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="project-text">
+              <h2 class="fs-1 mt-5">Reel Movies</h2>
+              <p class="fs-4">
+                A Full-Stack MERN application that Fetches movies from The Movie
+                DB api.
+              </p>
+              <p class="fs-5 text-uppercase" style="font-weight: 600">
+                <span class="bg-secondary badge">MongoDB</span>
+                <span class="bg-secondary badge">Express.js</span>
+                <span class="bg-secondary badge">React</span>
+                <span class="bg-secondary badge">Node.js</span>
+              </p>
+              <ul class="hero__social mt-4 px-0 social-flex">
+                <li>
+                  <a
+                    href="https://github.com/jnguyen-88/reel-movies-v2"
+                    target="_blank"
+                    class="hero__link"
+                  >
+                    <i class="fab fa-github-square social-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://jnguyen-88.github.io/reel-movies-v2/"
+                    target="_blank"
+                    class="hero__link"
+                  >
+                    <i class="fas fa-external-link-square-alt social-icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer>Justin Nguyen &copy; &nbsp; <span id="year"></span></footer>

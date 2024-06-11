@@ -1,5 +1,16 @@
 .hero {
-  color: #fff;
+  color: var(--font-color);
+
+  &__content {
+    margin-top: 70px;
+
+    h1 {
+      max-width: 1200px;
+    }
+    aside {
+      max-width: 1000px;
+    }
+  }
 
   &__text {
     font-size: 1.5rem;
@@ -38,9 +49,9 @@
 }
 
 .social-icon {
-  margin-right: 2.5rem;
+  margin-right: 1rem;
   transition: 0.2s;
-  color: #f25a2e;
+  color: var(--color-grey-dark);
 }
 
 .hero__link-icon {
@@ -49,8 +60,7 @@
 }
 
 .social-flex {
-  display: flex;
-  justify-content: center;
+  color: var(--primary-yellow-1);
 }
 
 .about {
